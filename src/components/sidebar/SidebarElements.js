@@ -56,11 +56,10 @@ export const SideA = styled.a`
   margin-bottom: 10px;
 
   &:active, &:focus, &:hover {
-    background-color: rgba(250, 250, 250, 0.3);
     text-transform: uppercase;
     font-family: 'Fraunces', serif;
     font-size: 15px;
-    color: var(--white);
+    color: var(--yellow);
   }
 `
 
