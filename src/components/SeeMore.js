@@ -27,6 +27,21 @@ const ContainerElement = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  img {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+  }
+
+  @-webkit-keyframes action {
+    0% { transform: translateY(0); opacity: 100%; }
+    100% { transform: translateY(-10px); opacity: 80%; }
+  }
+
+  @keyframes action {
+    0% { transform: translateY(0); opacity: 100%; }
+    100% { transform: translateY(-10px); opacity: 80%; }
+  }
 `
 
 const Text = styled.h1`
