@@ -12,6 +12,11 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     }
 
+    const close = () => {
+        if(isOpen)
+            setIsOpen(false);
+    }
+
     return (
         <div>
             <Nav>
@@ -31,7 +36,7 @@ const Navbar = () => {
                 </NavContainer>
             </Nav>
             <div>
-                <Sidebar isOpen={isOpen} toggle={toggle}/>
+                <Sidebar isOpen={isOpen} close={close}/>
             </div>
         </div>
     )

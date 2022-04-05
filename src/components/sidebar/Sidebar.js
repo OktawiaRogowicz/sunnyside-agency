@@ -1,10 +1,10 @@
 import React from "react";
 import {Contact, Side, SideA, SideContainer, SideElement, SideMenu} from "./SidebarElements";
 
-const Sidebar = ( {isOpen, toggle} ) => {
+const Sidebar = ( {isOpen, close} ) => {
 
     return (
-        <Side isOpen={isOpen} onClick={toggle}>
+        <Side isOpen={isOpen} onClick={close}>
             <SideContainer>
                 <SideMenu>
                     <SideElement><SideA className="navItem" href="#welcome">About</SideA></SideElement>
