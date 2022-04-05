@@ -7,6 +7,8 @@ import IconThomas from "../images/image-thomas.jpg";
 const Container = styled.div`
   width: 100%;
   min-height: 100vh;
+  height: 100vh;
+  flex-flow: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +19,7 @@ const Container = styled.div`
     text-transform: uppercase;
     letter-spacing: 5px;
     color: var(--grayish_blue);
+    flex: 0 1 auto;
   }
 
   @media screen and (max-width: 768px) {
@@ -26,7 +29,9 @@ const Container = styled.div`
 `
 
 const ChildContainer = styled.div`
-  height: 70%;
+  height: 80%;
+  flex-flow: column;
+  display: flex;
 `
 
 const Section = styled.div`
@@ -35,7 +40,8 @@ const Section = styled.div`
   margin: auto;
   display: flex;
   flex-direction: row;
-
+  flex: 1 1 auto;
+  
   @media screen and (max-width: 760px) {
     display: inline-block;
   }
@@ -58,7 +64,7 @@ const Subsection = styled.div`
 
 const Child = styled.div`
 
-  padding: 20% 0 20% 0;
+  padding: 5% 0 5% 0;
 
   @media screen and (max-width: 768px) {
     padding: 2% 0 2% 0;
@@ -69,6 +75,7 @@ const Child = styled.div`
     width: 80px;
     height: 80px;
     top: 50%;
+    margin: 0;
   }
   
   h2 {
