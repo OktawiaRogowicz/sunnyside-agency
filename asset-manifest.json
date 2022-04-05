@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sunnyside-agency/static/css/main.10d1b1d9.css",
-    "main.js": "/sunnyside-agency/static/js/main.37d75cb9.js",
+    "main.js": "/sunnyside-agency/static/js/main.b2fb92d6.js",
     "static/js/787.26788e5c.chunk.js": "/sunnyside-agency/static/js/787.26788e5c.chunk.js",
     "static/media/image-header.jpg": "/sunnyside-agency/static/media/image-header.9167cda0c72b56b2cda5.jpg",
     "static/media/image-gallery-milkbottles.jpg": "/sunnyside-agency/static/media/image-gallery-milkbottles.df1d9d8460e873924250.jpg",
@@ -19,11 +19,11 @@
     "static/media/icon-arrow-down.svg": "/sunnyside-agency/static/media/icon-arrow-down.979ef07a7cbb07d35f05bbaa093f7489.svg",
     "static/media/icon-hamburger.svg": "/sunnyside-agency/static/media/icon-hamburger.7764b7eb6060edb45161f8b146f1373c.svg",
     "main.10d1b1d9.css.map": "/sunnyside-agency/static/css/main.10d1b1d9.css.map",
-    "main.37d75cb9.js.map": "/sunnyside-agency/static/js/main.37d75cb9.js.map",
+    "main.b2fb92d6.js.map": "/sunnyside-agency/static/js/main.b2fb92d6.js.map",
     "787.26788e5c.chunk.js.map": "/sunnyside-agency/static/js/787.26788e5c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10d1b1d9.css",
-    "static/js/main.37d75cb9.js"
+    "static/js/main.b2fb92d6.js"
   ]
 }
