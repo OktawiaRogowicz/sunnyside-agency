@@ -61,7 +61,7 @@ As this project was still one of my first projects made with React, I want to fo
 
 When it comes to things I would love to get to know, styled components and React are still on this list. However, I would also love to include an API of some sort in my future project, as well as at some point, get to know Vue.js.
 
-Reasons above are the reason why for my next challange, I picked <a href="https://github.com/OktawiaRogowicz/ip-address-tracker"><strong>2. API Address </strong>Tracker</a>.
+Reasons above are the reason why for my next challange, I picked <a href="https://github.com/OktawiaRogowicz/ip-address-tracker"><strong>2. IP Address Tracker</strong></a>.
 
 <h1><code>Author</code></h1>
 
