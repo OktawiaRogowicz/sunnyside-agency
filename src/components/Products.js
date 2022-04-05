@@ -67,7 +67,9 @@ const BottomText = styled.div`
   text-align: center;
 `
 
-const Text = styled.div`
+const Text = styled.div.attrs(props => ({
+    borColor: props.c,
+  }))`
   width: 70%;
   
   h1 {
@@ -94,10 +96,12 @@ const Text = styled.div`
     font-family: 'Fraunces', serif;
     font-size: 1rem;
     text-transform: uppercase;
-
+    text-decoration: none;
+    color: inherit;
+    
     &:before {
       border-top: 10px solid;
-      border-color: var(--yellow);
+      border-color: ${props => props.c};;
       opacity: 0.5;
       border-radius: 10px;
       content:"";
@@ -106,6 +110,7 @@ const Text = styled.div`
       top: 60%; left: -10%; right: 0; bottom: 0;
       width: 120%;
       z-index: -1;
+      
     }
     
     &:active, &:hover, &:focus {
@@ -128,13 +133,13 @@ const Products = () => {
             <Section>
                 <Subsection style={isMobile ? {order: "2"} : {order: "1"}}>
                     <CenteredText>
-                        <Text>
+                        <Text c="var(--yellow)">
                             <h1>Transform your brand</h1>
                             <p>
                                 We are a full-service creative agency specializing in helping brands grow fast.
                                 Engage your clients through compelling visuals that do most of the marketing for you.
                             </p>
-                            <a style={{borderColor: 'var(--yellow)'}}>Learn more</a>
+                            <a href="#">Learn more</a>
                         </Text>
                     </CenteredText>
                 </Subsection>
@@ -148,10 +153,10 @@ const Products = () => {
                     </Subsection>
                     <Subsection>
                         <CenteredText>
-                            <Text>
+                            <Text c="var(--soft_red)">
                                 <h1>Stand out to the right audience</h1>
                                 <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-                                <a style={{borderColor: 'var(--soft_red)'}}>Learn more</a>
+                                <a href="#">Learn more</a>
                             </Text>
                         </CenteredText>
                     </Subsection>
