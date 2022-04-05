@@ -9,6 +9,7 @@ export const Side = styled.div`
   padding: 0 32px;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => ( isOpen ? '100%' : '0')};
+  z-index: 999;
 
   &:before {
     content: "";

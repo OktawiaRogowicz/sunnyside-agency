@@ -29,6 +29,7 @@ const ContainerElement = styled.div`
   align-items: center;
   
   img {
+    z-index: 1;
     -webkit-animation: action 1s infinite  alternate;
     animation: action 1s infinite  alternate;
   }
