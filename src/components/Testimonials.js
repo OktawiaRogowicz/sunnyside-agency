@@ -25,6 +25,7 @@ const Container = styled.div`
   @media screen and (max-width: 768px) {
     padding-top: 10%;
     padding-bottom: 10%;
+    height: 300vh;
   }
 `
 
