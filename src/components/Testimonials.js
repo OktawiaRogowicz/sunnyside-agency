@@ -13,42 +13,37 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
+  padding: 10rem 0 5rem 0;
+
   h1 {
     font-family: 'Fraunces', serif;
     font-size: 1.4rem;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 0.313rem;
     color: var(--grayish_blue);
     flex: 0 1 auto;
+    max-width: 80%;
   }
 
   @media screen and (max-width: 768px) {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    height: 300vh;
+    height: fit-content;
   }
 `
 
-const ChildContainer = styled.div`
-  height: 80%;
-  flex-flow: column;
-  display: flex;
-`
-
-const Section = styled.div`
+const TestimonialsContainer = styled.div`
   width: 80%;
   height: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
   flex: 1 1 auto;
-  
+
   @media screen and (max-width: 760px) {
     display: inline-block;
   }
 `
 
-const Subsection = styled.div`
+const Testimonial = styled.div`
   width: 30%;
   margin: auto;
   padding: 5% 0px 5% 0px;
@@ -70,7 +65,7 @@ const Child = styled.div`
   @media screen and (max-width: 768px) {
     padding: 2% 0 2% 0;
   }
-  
+
   img {
     border-radius: 100%;
     width: 80px;
@@ -78,19 +73,19 @@ const Child = styled.div`
     top: 50%;
     margin: 0;
   }
-  
+
   h2 {
     font-family: 'Fraunces', serif;
     font-size: 1.4rem;
     color: var(--very_dark_desaturated_blue);
     margin: 0;
   }
-    
+
   h3 {
     font-size: 1rem;
     color: var(--grayish_blue);
   }
-    
+
   p {
     font-size: 1.2rem;
     color: var(--very_dark_grayish_blue);
@@ -102,47 +97,48 @@ const Testimonials = () => {
 
     return (
         <Container>
-            <ChildContainer>
-                <h1>Client testimonials</h1>
-                <Section>
-                    <Subsection>
-                        <Child>
-                         <img src={IconEmily} alt={"Logo"}/>
-                        </Child>
-                        <Child>
-                          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-                        </Child>
-                        <Child>
-                            <h2>Emily R.</h2>
-                            <h3>Marketing Director</h3>
-                        </Child>
-                    </Subsection>
-                    <Subsection>
-                        <Child>
-                          <img src={IconThomas} alt={"Logo"}/>
-                        </Child>
-                        <Child>
-                           <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-                        </Child>
-                        <Child>
-                            <h2>Thomas S.</h2>
-                         <h3>Chief Operating Officer</h3>
-                        </Child>
-                    </Subsection>
-                    <Subsection>
-                        <Child>
-                              <img src={IconJennie} alt={"Logo"}/>
-                        </Child>
-                        <Child>
-                             <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-                        </Child>
-                        <Child>
-                          <h2>Jennie F.</h2>
-                           <h3>Business Owner</h3>
-                        </Child>
-                    </Subsection>
-                </Section>
-            </ChildContainer>
+            <h1>Client testimonials</h1>
+            <TestimonialsContainer>
+                <Testimonial>
+                    <Child>
+                        <img src={IconEmily} alt={"Logo"}/>
+                    </Child>
+                    <Child>
+                        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and
+                            deadlines were always hit.</p>
+                    </Child>
+                    <Child>
+                        <h2>Emily R.</h2>
+                        <h3>Marketing Director</h3>
+                    </Child>
+                </Testimonial>
+                <Testimonial>
+                    <Child>
+                        <img src={IconThomas} alt={"Logo"}/>
+                    </Child>
+                    <Child>
+                        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+                            satisfying and enjoyable experience.</p>
+                    </Child>
+                    <Child>
+                        <h2>Thomas S.</h2>
+                        <h3>Chief Operating Officer</h3>
+                    </Child>
+                </Testimonial>
+                <Testimonial>
+                    <Child>
+                        <img src={IconJennie} alt={"Logo"}/>
+                    </Child>
+                    <Child>
+                        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+                            recommended!</p>
+                    </Child>
+                    <Child>
+                        <h2>Jennie F.</h2>
+                        <h3>Business Owner</h3>
+                    </Child>
+                </Testimonial>
+            </TestimonialsContainer>
         </Container>
     )
 }

@@ -14,47 +14,49 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   color: var(--white);
-`
 
-const TextContainer = styled.div`
-  height: 50%;
-  display: inline-block;
-`
-
-const ContainerElement = styled.div`
-  height: 50%;
-  width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
+
+  h1 {
+    margin: 5rem 0 5rem;
+    font-family: 'Fraunces', serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
   
   img {
     z-index: 1;
-    -webkit-animation: action 1s infinite  alternate;
-    animation: action 1s infinite  alternate;
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
   }
 
   @-webkit-keyframes action {
-    0% { transform: translateY(0); opacity: 100%; }
-    100% { transform: translateY(-10px); opacity: 80%; }
+    0% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+    100% {
+      transform: translateY(-10px);
+      opacity: 80%;
+    }
   }
 
   @keyframes action {
-    0% { transform: translateY(0); opacity: 100%; }
-    100% { transform: translateY(-10px); opacity: 80%; }
-  }
-`
-
-const Text = styled.h1`
-  margin: 0;
-  font-family: 'Fraunces', serif;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: 900;
-
-  @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    0% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+    100% {
+      transform: translateY(-10px);
+      opacity: 80%;
+    }
   }
 `
 
@@ -62,14 +64,8 @@ const SeeMore = () => {
 
     return (
         <Container>
-            <TextContainer>
-                <ContainerElement>
-                    <Text>We are creatives</Text>
-                </ContainerElement>
-                <ContainerElement>
-                    <img src={Arrow} alt={"Arrow down"}/>
-                </ContainerElement>
-            </TextContainer>
+            <h1>We are creatives</h1>
+            <img src={Arrow} alt={"Arrow down"}/>
         </Container>
     )
 }

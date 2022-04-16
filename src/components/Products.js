@@ -13,28 +13,25 @@ const Container = styled.div`
 
 const Section = styled.div`
   width: 100%;
-  height: 60vh;
+  min-height: 60vh;
   display: flex;
-  flex-direction: unset;
 
   @media screen and (max-width: 760px) {
     height: 120vh;
-    display: flex;
     flex-direction: column;
   }
-`
-
-const Image = styled.div`
-  display: block;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 `
 
 const Subsection = styled.div`
   width: 50%;
   order: 1;
+  
+  text-align: left;
+  display: flex;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   
   @media screen and (max-width: 760px) {
     height: 50%;
@@ -43,38 +40,19 @@ const Subsection = styled.div`
   }
 `
 
-const CenteredText = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  text-align: left;
-  
-  p {
-    color: var(--dark_grayish_blue);
-  }
-`
-
-const BottomText = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50%;
-  position: relative;
-  top: 50%; left: 0; right: 0; bottom: 0;
-  text-align: center;
-`
-
 const Text = styled.div.attrs(props => ({
     borColor: props.c,
-  }))`
-  width: 70%;
+}))`
+  
+  width: 80%;
+  margin: auto;
+  
+  display: inline-block;
   
   h1 {
     font-family: 'Fraunces', serif;
     font-size: 2.5rem;
+    margin: 0;
 
     @media screen and (max-width: 768px) {
       font-size: 1.8rem;
@@ -123,6 +101,16 @@ const Text = styled.div.attrs(props => ({
   }
 `
 
+const SubsectionImageWithText = styled(Subsection) `
+  text-align: center;
+  
+  ${Text} {
+    margin: 0 auto 0 auto;
+    align-self: flex-end;
+    height: 40%;
+  }
+`
+
 
 const Products = () => {
 
@@ -132,7 +120,6 @@ const Products = () => {
         <Container>
             <Section>
                 <Subsection style={isMobile ? {order: "2"} : {order: "1"}}>
-                    <CenteredText>
                         <Text c="var(--yellow)">
                             <h1>Transform your brand</h1>
                             <p>
@@ -141,47 +128,35 @@ const Products = () => {
                             </p>
                             <a href="#">Learn more</a>
                         </Text>
-                    </CenteredText>
                 </Subsection>
-                <Subsection style={isMobile ? {order: "1"} : {order: "2"}}>
-                    <Image style={{backgroundImage: `url(${DesktopTransform})`}}/>
+                <Subsection style={isMobile ? {order: "1"} : {order: "2"}}
+                            style={{backgroundImage: `url(${DesktopTransform})`, isMobile}}
+                >
                 </Subsection>
             </Section>
             <Section>
+                    <Subsection style={{backgroundImage: `url(${DesktopStandOut})`}}/>
                     <Subsection>
-                        <Image style={{backgroundImage: `url(${DesktopStandOut})`}}/>
-                    </Subsection>
-                    <Subsection>
-                        <CenteredText>
                             <Text c="var(--soft_red)">
                                 <h1>Stand out to the right audience</h1>
                                 <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
                                 <a href="#">Learn more</a>
                             </Text>
-                        </CenteredText>
                     </Subsection>
             </Section>
-            <Section style={isMobile ? {height: "200vh"} : {}}>
-                    <Subsection>
-                        <Image style={{backgroundImage: `url(${DesktopGraphicDesign})`}}>
-                            <BottomText style={{color: 'var(--dark_desaturated_cyan)'}}>
-                                <Text>
+            <Section>
+                    <SubsectionImageWithText style={{backgroundImage: `url(${DesktopGraphicDesign})`}}>
+                            <Text style={{color: 'var(--dark_desaturated_cyan)'}}>
                                     <h1>Graphic design</h1>
                                     <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-                                </Text>
-                            </BottomText>
-                        </Image>
-                    </Subsection>
-                    <Subsection>
-                        <Image style={{backgroundImage: `url(${DesktopPhotography})`}}>
-                            <BottomText style={{color: 'var(--dark_blue)'}}>
-                                <Text>
+                            </Text>
+                    </SubsectionImageWithText>
+                    <SubsectionImageWithText style={{backgroundImage: `url(${DesktopPhotography})`}}>
+                            <Text style={{color: 'var(--dark_blue)'}}>
                                     <h1>Photography</h1>
                                     <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-                                </Text>
-                            </BottomText>
-                        </Image>
-                    </Subsection>
+                            </Text>
+                    </SubsectionImageWithText>
             </Section>
         </Container>
     )
