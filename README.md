@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<h1 align="center"><code>FRONTEND MENTOR</code></h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef">
+    <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_3.png"
+      alt="Frontend mentor challenge"
+      width="300"/>
+  </a>
+</div>
 
-## Available Scripts
+<h2 align="center">:sunny: <code>1. sunnyside agency landing page</code> :sunny:</h2>
 
-In the project directory, you can run:
+<div align="center">
+This is a solution to the <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef">Sunnyside agency landing page challenge on Frontend Mentor</a>! 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For my first ever encounter with Frontend Mentor, as well as one of first projects made with React, I chose something that seemed quick and easy to finish - just to test my skills and to see if the format of learning was good for me. As it turns out, I liked it a lot, and the results can be seen below!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+.
 
-### `npm test`
+<strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/sunnyside-agency/"><strong>LIVE SITE</strong></a>
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h1><code>Overview</code></h1>
 
-### `npm run build`
+> Users should be able to:
+> 
+>- View the optimal layout for the site depending on their device's screen size
+>- See hover states for all interactive elements on the page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<div align="center">
+  <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_4.png"
+    alt="Screenshot" width="300"/>
+    <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_5.png"
+    alt="Screenshot" width="300"/>
+    <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_6.png"
+    alt="Screenshot" width="300"/>
+    <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_7.png"
+    alt="Screenshot" width="300"/>
+    <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_8.png"
+    alt="Screenshot" width="300"/>
+</div>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<div align="center">
+  HTML <strong>||</strong> CSS <strong>||</strong> flexbox <strong>||</strong> React <strong>||</strong> Styled components
+  
+  <strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/sunnyside-agency/"><strong>LIVE SITE</strong></a>
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### What I learned
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The challenge I picked allowed me to quickly and easilly test my knowledge, allowing me to focus on building the website quickly. I focused on React and Styled components, using mostly flexbox - however, in the future, I want to build a website based on a CSS grid. It was also a good practice on responsive websites - even though everything works as it should, I will definitelly work on making the code more readable and accessable once I get to know good practices better.
 
-## Learn More
+### Continued development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+As this project was still one of my first projects made with React, I want to focus on clean code and good practice - especially once I get feedback on the code, so I can visit it back again.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When it comes to things I would love to get to know, styled components and React are still on this list. However, I would also love to include an API of some sort in my future project, as well as at some point, get to know Vue.js.
 
-### Code Splitting
+Reasons above are the reason why for my next challange, I picked <a href="https://github.com/OktawiaRogowicz/ip-address-tracker"><strong>2. IP Address Tracker</strong></a>.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<h1><code>Author</code></h1>
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
